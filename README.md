@@ -1,150 +1,172 @@
 # GreenBank Simulator
 
-A frontend-only fintech banking system simulation built with pure HTML, CSS, and Vanilla JavaScript — designed to model real-world banking behavior, state logic, and UI architecture without backend dependencies.
+A frontend-only digital banking system simulation built with HTML, CSS, and Vanilla JavaScript.
 
-Live Demo: https://melodious-sunshine-7cee2d.netlify.app/
-
----
-
-## 🏦 What Is GreenBank?
-
-GreenBank is not a static demo. It’s a core banking behavior simulator that mimics how real financial systems handle users, accounts, transactions, sessions, and audit logic — all inside the browser.
-
-It simulates:
-
-- User registration & authentication
-- Persistent session state
-- Multiple accounts (checking/savings)
-- Credit, debit, and transfer workflows
-- Transaction ledger & activity feed
-- PIN-based sensitive operations
-- Admin console with audit capabilities
-- Premium UI design and responsive layout
-
-All of this runs entirely on the frontend using LocalStorage as a mock database.
+**Author:** Innocent Ikuku  
+**Brand:** GreenTEK DIGITALS  
+**Live Demo:** https://melodious-sunshine-7cee2d.netlify.app/
 
 ---
 
-## 🧠 Why This Project Matters
+## Overview
 
-Most frontend demos are superficial. GreenBank is different because it:
+GreenBank is a systems-level fintech simulation designed to model how a real digital bank behaves, not just how it looks.
 
-- Models real banking logic
-- Uses ledger-first accounting
-- Implements stateful systems thinking
-- Simulates audit and compliance behavior
-- Applies UI/UX hierarchy for finance apps
-- Is designed to be backend-ready
+It focuses on:
 
-This project demonstrates:
-✔ System design  
-✔ State management  
-✔ Debugging complex flows  
-✔ Architecture decisions  
-✔ UI clarity & responsive UX  
-✔ Product-level thinking
+- Realistic banking flows
+- Deterministic frontend state management
+- Ledger-based transactions
+- Session handling
+- Security modeling
+- Calm, trust-centered UI
+
+This is not a static demo. It behaves like a product.
 
 ---
 
-##  Features
+## About GreenTEK DIGITALS
 
-### User Side
+GreenBank is a concept product under my personal brand, **GreenTEK DIGITALS**, which represents a philosophy of sustainable, long-term, and human-centered technology.
 
-- Account creation & authentication  
-- Persistent login sessions  
-- Balance overview and transactions  
-- Transfers between accounts  
-- Activity feed with timestamps  
-- PIN security for sensitive actions  
+The “Green” in GreenBank reflects:
 
-### Admin Side
+- Calm interfaces
+- Clarity-first design
+- Longevity over trends
+- Trust-focused UX
+- Minimal cognitive load
 
-- Credit and debit operations    
-- Audit trail with admin metadata  
-- Immutable log of system changes
+This philosophy influenced both the UI and system design.
 
 ---
 
-## 🧩 Architecture Overview
+## Tech Stack
 
-GreenBank uses:
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- LocalStorage (mock database)
+- Netlify (deployment)
 
-### LocalStorage tables
+No frameworks. No backend. Built from first principles.
 
+---
 
+## Core Features
 
-### Single source of truth
+### User System
+- Registration
+- Login
+- Persistent sessions
+- Logout handling
+- Session guards
 
+### Banking Simulation
+- Checking & savings accounts
+- Credits and debits
+- Transfers
+- Transaction history
+- Activity feed
+
+### Security Modeling
+- PIN-gated sensitive actions
+- Role separation logic
+- Admin-style isolation patterns
+
+### UI/UX
+- Premium fintech design language
+- Glassmorphism-inspired panels
+- Soft green sustainability palette
+- Mobile responsiveness
+- Trust signals
+- Clear visual hierarchy
+
+---
+
+## Architecture Principles
+
+### Single Source of Truth
 All UI and logic are derived from one authoritative state object.
 
-### Ledger-based transactions
+### Ledger-Based Transactions
+Balances are computed from transaction logs, not mutated directly.
 
-Balances are computed from event logs, not patched arbitrarily.
+### Frontend-Only, Backend-Ready
+LocalStorage is used as a mock database:
+greenbank_users
+greenbank_current_user
+greenbank_admin
 
-### Security patterns
+The data model is structured for easy migration to a real backend later.
 
-Role separation, PIN steps, audit metadata, and session guards simulate backend logic.
-
----
-
-## 📌 Design Philosophy
-
-This project was built with real-world constraints in mind:
-
-- Data-first UI
-- Clear visual hierarchy
-- Calm, trust-centered design
-- Mobile responsiveness
-- Predictable deterministic state
+### Security Patterns
+- Session isolation
+- Role separation
+- PIN-based step-up actions
+- Guarded routes
 
 ---
 
-## 🛠 How to Run Locally
+## Developer-Focused Challenges Solved
 
-1. Clone the repo:
+- CSS collisions across pages
+- State desynchronization
+- Broken auth flows
+- UI regressions
+- Layout instability
+- Script interference
 
-git clone https://github.com/Centpizzy-cloud/GreenBank-Simulator.git
-
-2. Open `index.html` in your browser  
-
-3. Explore the dashboard & admin console
-
----
-
-##  Limitations & Next Phase
-
-GreenBank currently uses LocalStorage as a mock database. The future roadmap includes:
-
-- Backend API with PostgreSQL (Neon or Supabase)
-- JWT-based authentication
-- Persistent transactions
-- Role-based security
-- Real environment deployments
+These were resolved through architectural resets, not patching.
 
 ---
 
-## 📈 What This Project Shows About My Skills
+## Why This Project Matters
 
-This project demonstrates:
+Most frontend demos are shallow.
 
-- Architecture design from first principles
-- Persistent state modeling without frameworks
-- Simulation of backend system behavior
-- Debugging real-world UI and logic problems
-- UX principles for financial applications
-- System-level thinking under constraints
+GreenBank demonstrates:
+
+- Frontend architecture
+- State modeling
+- UI systems thinking
+- Real-world logic simulation
+- Debugging discipline
+- Product-level UX decisions
+
+It shows how I think, not just what I build.
 
 ---
 
-## 📌 Live Demo
+## Deployment
 
-Try it now:  
+Hosted on Netlify as a static app.
+
+Live Demo:  
 https://melodious-sunshine-7cee2d.netlify.app/
 
 ---
 
-## 💡 Feedback & Collaboration
+## Roadmap
 
-I welcome questions, pull requests, and ideas.  
-Let’s build more realistic engineering demos for learning and adoption.
+- Backend integration (Postgres / Supabase / Neon)
+- API layer
+- JWT authentication
+- Role-based admin
+- External transfers
+- Statements
+- Fraud flags
+- Reconciliation system
+
+---
+
+## Final Note
+
+GreenBank is not a finished product.  
+It is a **core-banking behavior simulator**.
+
+It reflects the GreenTEK DIGITALS philosophy:
+
+> Sustainable technology is not just about the environment.  
+> It is about building systems that last.
 
