@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login — GreenBank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="auth-body">
+
+  <nav class="nav minimal">
+    <div class="logo">GreenBank</div>
+    <a href="register.html" class="nav-link">Open Account</a>
+  </nav>
+
+  <main class="auth-stage">
+    <div class="auth-card">
+      <h1>Welcome back</h1>
+      <p class="auth-sub">Secure access to your private finance space.</p>
+
+      <form id="loginForm">
+        <label>
+          Email
+          <input type="email" id="emailInput" required>
+        </label>
+
+        <label>
+          Password
+          <input type="password" id="passwordInput" required>
+        </label>
+
+        <button type="submit" class="primary-btn">Login</button>
+      </form>
+
+      <p class="auth-foot">
+        No account yet?
+        <a href="register.html">Create one</a>
+      </p>
+    </div>
+  </main>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

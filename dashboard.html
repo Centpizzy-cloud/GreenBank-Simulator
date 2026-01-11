@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GreenBank — Secure Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="dashboard-body">
+
+<!-- HEADER -->
+<header class="gb-header">
+  <div class="gb-brand">GreenBank</div>
+  <div class="gb-actions">
+    <button class="ghost-btn" id="contactAdminBtn">Contact Admin</button>
+    <button class="ghost-btn danger" onclick="logout()">Exit</button>
+  </div>
+</header>
+
+<!-- LOCK OVERLAY -->
+<div class="lock-screen hidden" id="lockScreen">
+  <div class="lock-card">
+    <h2>Session Locked</h2>
+    <p>Enter your 6-digit PIN to continue</p>
+    <input type="password" id="unlockPinInput" maxlength="6" />
+    <button class="primary-btn" id="unlockBtn">Unlock</button>
+  </div>
+</div>
+
+<main class="dashboard-wrap">
+
+  <!-- BALANCE -->
+  <section class="balance-hero">
+    <h1>Total Balance</h1>
+    <div class="balance-amount" id="totalBalance">$0.00</div>
+  </section>
+
+  <!-- GRID -->
+  <section class="dash-grid">
+
+    <!-- ACCOUNTS -->
+    <div class="card">
+      <h3>Accounts</h3>
+      <p>Checking <span id="checkingBalance">$0.00</span></p>
+      <p>Savings <span id="savingsBalance">$0.00</span></p>
+    </div>
+
+    <!-- EXTERNAL TRANSFER -->
+    <div class="card">
+      <h3>External Transfer</h3>
+
+      <form id="transferForm">
+        <select id="beneficiarySelect">
+          <option value="">Select beneficiary</option>
+        </select>
+
+        <input type="number" id="transferAmount" placeholder="Amount ($)" />
+        <input type="text" id="transferNote" placeholder="Transfer note (optional)" />
+
+        <button class="primary-btn">Send Transfer</button>
+      </form>
+
+      <button class="link-btn" id="addBeneficiaryBtn">+ Add Beneficiary</button>
+    </div>
+
+    <!-- ACTIVITY -->
+    <div class="card">
+      <h3>Activity</h3>
+      <ul class="activity-list" id="activityList"></ul>
+    </div>
+
+  </section>
+</main>
+
+<!-- BENEFICIARY MODAL -->
+<div class="modal hidden" id="beneficiaryModal">
+  <div class="modal-card">
+    <h3>Add Beneficiary</h3>
+
+    <input type="text" id="benName" placeholder="Full name" />
+    <input type="text" id="benBank" placeholder="Bank name" />
+    <input type="text" id="benAccount" placeholder="Account number" />
+
+    <div class="modal-actions">
+      <button class="secondary-btn" id="cancelBen">Cancel</button>
+      <button class="primary-btn" id="saveBen">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- PIN MODAL -->
+<div class="modal hidden" id="pinModal">
+  <div class="modal-card">
+    <h3 id="pinTitle">Enter PIN</h3>
+    <input type="password" id="pinInput" maxlength="6" />
+    <button class="primary-btn" id="pinConfirmBtn">Confirm</button>
+  </div>
+</div>
+
+<!-- CONTACT ADMIN MODAL -->
+<div class="modal hidden" id="adminModal">
+  <div class="modal-card">
+    <h3>Contact Admin</h3>
+    <textarea id="adminMessage" placeholder="Write your message..."></textarea>
+
+    <div class="modal-actions">
+      <button class="secondary-btn" id="cancelAdmin">Cancel</button>
+      <button class="primary-btn" id="sendAdmin">Send</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
