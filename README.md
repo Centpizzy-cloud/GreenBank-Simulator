@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ccb43e6f-b2f8-4040-99b5-fa24d73833cc/deploy-status)](https://app.netlify.com/projects/melodious-sunshine-7cee2d/deploys)
+
 # GreenBank Simulator
 
 A frontend-only digital banking system simulation built with HTML, CSS, and Vanilla JavaScript.
@@ -5,6 +7,10 @@ A frontend-only digital banking system simulation built with HTML, CSS, and Vani
 **Author:** Innocent Ikuku  
 **Brand:** GreenTEK DIGITALS  
 **Live Demo:** https://melodious-sunshine-7cee2d.netlify.app/
+## 📸 Screenshots
+
+### Landing Page
+![Landing Page](screenshots/landing-page-screenshot.png)
 
 ---
 
